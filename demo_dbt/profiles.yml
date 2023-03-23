@@ -1,0 +1,21 @@
+demo_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: mysql
+      server: localhost
+      port: 3306  # optional
+      database: presto_mysql_db # optional, should be same as schema
+      schema: presto_mysql_db
+      username: root
+      password: shubhi1996
+      driver: MySQL ODBC 8.0 ANSI Driver
+    prod:
+      type: mysql
+      server: localhost
+      port: 3306  # optional
+      database: presto_mysql_db # optional, should be same as schema
+      schema: presto_mysql_db
+      username: root
+      password: shubhi1996
+      driver: MySQL ODBC 8.0 ANSI Driver
